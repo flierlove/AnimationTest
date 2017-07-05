@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    android:orientation="vertical"
+    tools:context="com.maxnerva.smart_city.animationexample.PropertyAnimationActivity">
+
+    <Button
+        android:id="@+id/objectAnimator"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:onClick="objectAnimatorImpl"
+        android:text="objectAnimator" />
+
+    <Button
+        android:id="@+id/animatorSet"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:onClick="animatorSetImpl"
+        android:text="animatorSet" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addButton"
+        android:text="addButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="removeButton"
+        android:text="removeButton" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <Button
+        android:text="keyFrames"
+        android:onClick="keyFramesImpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
